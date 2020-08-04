@@ -1,0 +1,63 @@
+@font-face {
+    font-family: Quicksand;
+    src: url(/font/Quicksand-Regular.otf) format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url(/font/Quicksand-Italic.otf) format('otf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url(/font/Quicksand-Bold.otf) format('otf');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: Quicksand;
+    src: url(/font/Quicksand-BoldItalic.otf) format('otf');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: Quicksand;
+    src: url(/font/Quicksand-Light.otf) format('otf');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: Quicksand;
+    src: url(/font/Quicksand-LightItalic.otf) format('otf');
+    font-weight: 100;
+    font-style: italic;
+}
+
+
+/* FUTURA */
+
+@font-face {
+    font-family: Futura;
+    src: url(font/FuturaPTBook.otf) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: Futura;
+    src: url(font/FuturaPTBold.otf) format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Futura;
+    src: url(font/FuturaPTMedium.otf) format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
