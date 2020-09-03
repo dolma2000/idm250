@@ -59,7 +59,7 @@
     bottom: -10px; }
 
   .hamburger-bg {
-    background-color:#F7BE6A ;
+    background-color:#9F1064 ;
     width: 160px;
     height: 160px;
     position: absolute;
@@ -67,7 +67,7 @@
     top: -80px;
     left: -80px;
     border-radius: 160px;
-    /* box-shadow: 2px 1px 13px 2px #c0c0c0; */
+    box-shadow: 1px 1px 20px 4px #1a515f81;
   }  
 
 

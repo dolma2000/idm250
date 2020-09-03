@@ -46,10 +46,11 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: Futura;
-    src: url(font/FuturaPTBold.otf) format('woff2');
-    font-weight: bold;
+    src: url(font/FuturaPTMedium.otf) format('woff2');
+    font-weight: 300;
     font-style: normal;
 }
 
@@ -59,5 +60,7 @@
     font-weight: 300;
     font-style: normal;
 }
+
+
 
 

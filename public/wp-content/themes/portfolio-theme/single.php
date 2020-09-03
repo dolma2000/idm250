@@ -1,30 +1,54 @@
-<?php get_header(); ?>
+<?php
+/**
+ * The template for displaying all single post
+ */
 
+?>
+
+<?php 
+    get_header(); 
+    include 'subheader.php';
+?>
+
+
+
+<!-- MAIN CONTENT -->
 <main class="main-content">
-    <?php while (have_posts()) : the_post(); ?>
+    <?php while (have_posts()) : the_post(); ?> <!-- THE LOOP: Check to see if it has any content -->
         <div class="container">
 
             <!-- Main Content -->
 
-            <div class="title-cat">
-                <h1 class="post-title"><?php the_title(); ?></h1>     
-                <p class="category"><?php the_category();?></p>
+            <div class="title-section">
+
+                <div class="title-category">
+                    <h1 class="post-title"><?php the_title(); ?></h1> <!-- Page Title -->  
+                    
+                    <?php the_category();?>
+                </div>
+
+                <div class="singlepost_tag">
+                    <?php the_tags(' ', ' ', ' '); ?>
+                </div>
+            </div>
+            <div class="post-thumbnail">
+                <?php the_post_thumbnail(); ?>
+                <figcaption>
+                    <p>Watercolor and white gel pen on watercolor paper</p>
+                </figcaption>
             </div>
 
             <div class="page-builder">
-                <?php the_content(); ?>
+                <?php the_content(); ?> <!-- Main Article Content-->
             </div>
 
-            <?php the_tags(); ?>
+           
 
-            <?php get_sidebar(); ?>
+            <?php //get_sidebar(); ?>
 
         </div>
-    <?php endwhile; ?>
+    <?php endwhile; ?> <!-- End of LOOP -->
 </main>
 
 <?php get_footer();?>
 <?php the_excerpt(); ?> - Use this for the result page that has an excerpt summary for each.
-
-
-

@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'adam.cg_proregular';
+    src: url('adam.cg_pro-webfont.woff2') format('woff2'),
+         url('adam.cg_pro-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Didot */
+
+@font-face {
+    font-family: 'Didot';
+    src: url(font/DidotLH-Roman.otf) format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Bodoni */
+@font-face {
+    font-family: 'Bodoni-Bold';
+    src: url(font/Bodoni-Bold.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url(font/FuturaPTBook.otf) format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url(font/FuturaPTLight.otf) format('otf');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url(font/FuturaPTMedium.otf) format('otf');
+    font-weight: 300;
+    font-style: normal;
+}

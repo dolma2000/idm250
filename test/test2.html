@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="css/glide.core.css">
+</head>
+<body>
+  
+    
+<div class="container">
+
+
+    <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide"><img src="images/bubbleboy.jpg" alt=""></li>
+            <li class="glide__slide"><img src="images/Metamorphosis.jpg" alt=""></li>
+            <li class="glide__slide"><img src="images/bubbleboy.jpg" alt=""></li>
+          </ul>
+
+          <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+        </div>
+        </div>
+      </div>
+</div>   
+
+
+<div class="container">
+
+
+  <div class="glide">
+      <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+          <li class="glide__slide"><img src="images/bubbleboy.jpg" alt=""></li>
+          <li class="glide__slide"><img src="images/Metamorphosis.jpg" alt=""></li>
+          <li class="glide__slide"><img src="images/bubbleboy.jpg" alt=""></li>
+        </ul>
+
+        <div class="glide__arrows" data-glide-el="controls">
+        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+      </div>
+      </div>
+    </div>
+</div>  
+
+
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+<script>
+const config = { 
+  type: 'carousel',
+  startAt: 0,
+  perView: 2,
+  focusAt: 1,
+}
+    new Glide('.glide', config).mount()
+</script>
+    
+</body>
+</html>

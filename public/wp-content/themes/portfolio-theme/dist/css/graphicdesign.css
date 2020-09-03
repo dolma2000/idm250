@@ -1,0 +1,44 @@
+.gd-grid img {
+    width: 100%;
+    height: auto;
+}
+.gd-grid {
+    margin-top: 3em;
+}
+
+
+@media (min-width: 37.5em) {
+    .gd-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row: auto;
+        grid-template-areas: "one two three";
+        margin: 2em 4% 0em;
+    }
+    .gd-grid div{
+        display: flex;
+        flex-direction: column;
+    }
+    .gd-grid img {
+        align-self: center;
+        width: 100%;
+        border: 10px solid white;
+    }
+    .one {
+        grid-area: one;
+        margin-top: 15em;
+    }
+    .two {
+        grid-area: two;
+    }
+    .three {
+        grid-area: three;
+        margin-top: 10em;
+    }
+}    
+
+@media (min-width: 62.5em){
+    .gd-grid {
+        margin: 4em 11% 0em;
+    }
+}

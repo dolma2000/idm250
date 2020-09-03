@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.container img{
+    width: 100%;
+    padding: 1em;
+}
+
+.glide__slide img{
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+
+.glide__slide--active img {
+    transform: scale(1.08);
+    transition: all 0.3s ease-in-out;
+}

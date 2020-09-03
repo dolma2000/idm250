@@ -1,0 +1,63 @@
+.resume{
+    background-color: #f2f9ff;
+    margin-top: -14em;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+.resume_container{
+    margin: 3em auto;
+    padding: 3em 0;
+    width: 80%;
+}
+
+.resume_name{
+    text-align: center;
+}
+.resume_name p{
+    line-height: 1.6em;
+}
+.resume_name h1{
+    font-size: 2em;
+}
+
+.resume_content{
+    margin-top: 2em;
+}
+.resume_content div{
+    line-height: 1.5em;
+    font-family:'Fira Sans Condensed', sans-serif; ;
+}
+
+.resume_content h1{
+    font-size: 1.3em;
+    margin: 1em 0;
+    text-transform: uppercase;
+    padding-left: 1em;
+    border-left: 4px solid #7B2A4C ;
+}
+
+.resume_experience h1{
+    margin: 0.5em 0;
+    text-transform: none;
+    padding-left: 0;
+    border-left: none;
+}
+.resume_experience h2{
+    margin-top: 1.5em;
+}
+.resume_experience li{
+    line-height: 1.4em;
+}
+.resume_experience li{
+    list-style: square;
+    margin-left: 3em;
+}
+
+
+
+@media(min-width:37.5em) {
+    .resume{
+        margin-top: 0em;
+    }
+
+}

@@ -1,0 +1,130 @@
+.archive_info {
+    margin: 2em 2em;
+}
+.archive_info h1{
+    margin-top: 10px;
+    font-family: didot;
+    font-weight: bold;
+    font-size: 2em;
+    text-transform: capitalize;
+}
+.archive_info b {
+    font-weight: bold;
+}
+.archive_container  {
+    margin: 4em auto;
+}
+.archive_container a{
+    text-decoration: none;
+}
+.archive_post{
+    margin: 2em 2em;
+}
+.archive_post article{
+    margin-top: 2em;
+    border-top: 10px solid #DEF0FF;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-areas: 
+    "left right";
+}
+.archive_thumbnail {
+    grid-area: left;
+    height: 140px; 
+}
+.archive_thumbnail img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.archive_maininfo{
+    grid-area: right;
+    padding: 0.7em;
+}
+
+.archive_maininfo h2{
+    font-family: didot;
+    color: #0D3D67;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+.archive_post_tag{
+    margin-top: 1em;
+}
+.archive_post_tag a:nth-child(1){
+    display: none;
+}
+.archive_post_tag a{
+    border: 1px solid #DEF0FF;
+    border-radius: 50px;
+    padding: 5px 7px;
+    line-height: 36px;
+}
+.archive_excerpt{
+    display: none;
+}
+
+@media (min-width:37.5em){
+    .archive_container {
+        margin: 5 auto;
+        max-width: 800px;
+    }
+    .archive_thumbnail {
+        grid-area: left;
+        height: 180px; 
+    }
+    .archive_maininfo{
+        padding: 1.1em 1.3em 0em;
+    }
+    .archive_post article{
+        grid-template-columns: 40% 60%;
+    }
+    .archive_excerpt{
+        display: block;
+        margin-top: 1em;
+        line-height: 1.3em;
+        
+        width: 100%;
+        overflow: hidden;
+
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+}
+
+
+@media (min-width: 62.5em){
+    .archive_info h1 {
+        font-size: 2.5em;
+    }
+    .archive_container {
+        max-width: 900px;
+        margin: 6em auto;
+    }
+    .archive_post article{
+        grid-template-columns: 45% 55%;
+        position: relative;
+        top: 0;
+        left: 0;
+        /* box-shadow: 10px 10px #a3ccc777; */
+        transition: top 0.5s ease-in-out, left 0.5s ease-in-out;
+    }
+    .archive_post article:hover {
+        position: relative;
+        top: -20px;
+        left: -20px;
+        transition: top 0.5s ease-in-out, left 0.5s ease-in-out;
+    }
+    .archive_maininfo h2{
+        line-height: 1.2em;
+        font-size: 1.8em;
+
+    }
+    .archive_thumbnail {
+        height: 220px; 
+    }
+    .archive_excerpt{
+        -webkit-line-clamp: 3;
+    }
+}

@@ -3,11 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/css/styles.css"> <!-- php replaces wp-content/themes/portfolio-theme/ -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/hamburgers-master/dist/hamburgers.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/css/hamburger-style.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/dist/css/font.css">
+    <title><?php bloginfo('name') ?> | <?php wp_title(); ?></title>
     <?php wp_head(); ?>
 </head>
 <body <?php body_class();?> >
@@ -27,8 +23,6 @@
      <div class="navigation-menu-list">
         <?php wp_nav_menu (['theme_location' => 'mobile_menu',])?>
      </div>   
-        
-
 
     </div>
 </div>
@@ -40,13 +34,3 @@
     <?php wp_nav_menu (['theme_location' => 'primary_menu',])?>
 
 </header>
-
-
-<!--    
-HEADER
-- Home
-- Portfolio
-- Resume
-(underlined microinteraction)
-
- -->

@@ -1,0 +1,136 @@
+.uiux_content{
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+}
+
+.uiux_container{
+    margin: 6em 0;
+}
+
+.uiux_img{
+    width: 100%;
+    margin: 0 auto;
+}
+.uiux_img img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.uiux_desc{
+    width: 75%;   
+    margin: 2em auto;
+}
+.uiux_desc h2{
+    font-size: 2.6em;
+    margin: 0.3em 0;
+    font-family: 'Bebas Neue', cursive;
+}
+.uiux_desc p{
+    font-size: 1.3em;
+    line-height: 1.3em;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+.casestudy_link{
+text-decoration: none;
+}
+.casestudy_button{
+border: 3px solid #7B2A4C;
+padding: 0.8em;
+width: 120px;
+margin-top: 1.3em;
+border-radius: 5px;
+transition: all 0.5s ease-in-out;
+}
+.casestudy_button p {
+font-size: 1.2em;
+text-align: center;
+color: #7B2A4C;
+transition: all 0.5s ease-in-out;
+font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+.casestudy_button:hover {
+background-color: #7B2A4C;
+}
+.casestudy_button:hover > p{
+color: white;
+}
+
+
+@media(min-width: 37.5em) {
+
+    .uiux_img{
+        width: 80%;
+    }
+
+}
+
+
+@media(min-width: 770px){   
+    .uiux_content{
+        margin-top: 0;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "image desc";
+    }
+    
+    .uiux_content:nth-child(even){
+        grid-template-areas: "desc image";
+    }
+    .uiux_img{
+        width: 100%;
+    }
+    .uiux_img img{
+        grid-area: image;
+    }
+    .uiux_desc_container{
+        grid-area: desc;
+    }
+    .uiux_desc{ 
+        margin: 0 auto;
+    }
+
+    .casestudy_link{
+        text-decoration: none;
+    }
+    .casestudy_button{
+        border: 3px solid #7B2A4C;
+        padding: 0.8em;
+        width: 120px;
+        margin-top: 1.3em;
+        border-radius: 5px;
+        transition: all 0.5s ease-in-out;
+    }
+    .casestudy_button p {
+        font-size: 1.2em;
+        text-align: center;
+        color: #7B2A4C;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .casestudy_button:hover {
+        background-color: #7B2A4C;
+    }
+    .casestudy_button:hover > p{
+        color: white;
+    }
+
+}
+
+@media(min-width: 62.5em){
+
+.uiux_desc{
+    width: 65%;
+}
+.uiux_desc h2{
+    font-size: 4em;
+}
+.uiux_desc p{
+    line-height: 1.5em;
+}
+
+}
